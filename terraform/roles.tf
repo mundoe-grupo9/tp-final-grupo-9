@@ -77,7 +77,7 @@ resource "aws_eks_node_group" "example" {
   cluster_name    = aws_eks_cluster.example.name
   node_group_name = "node-group-eks"
   node_role_arn   = aws_iam_role.eks_nodegroup_role.arn
-  subnet_ids      = ["subnet-0dda13a76a8410154", "subnet-0a718cdd3d8139cdd"]
+  subnet_ids      = ["subnet-0d17eaab166a49247", "subnet-0d99949f2e7cf43f1"]
   capacity_type = "ON_DEMAND"
 
   instance_types = ["t3.medium"]
